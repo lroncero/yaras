@@ -1,3 +1,12 @@
+rule ommadawn {
+    meta:
+        author = "lroncero"
+    strings:
+        $string = "ommadawn" ascii
+    condition:
+        all of them
+}
+
 rule Linux_Backdoor_Bash_e427876d {
     meta:
         author = "Elastic Security"

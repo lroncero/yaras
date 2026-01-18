@@ -24116,3 +24116,14 @@ rule Windows_Wiper_IsaacWiper_239cd2dc {
         5 of them
 }
 
+rule Windows_ommadawnRule {
+    meta:
+        description = "Test rule searching for ommadawn string"
+        author = "Lagartija"
+
+    strings:
+        $s1 = "ommadawn" nocase
+
+    condition:
+        $s1
+}

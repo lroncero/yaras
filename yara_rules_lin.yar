@@ -18114,3 +18114,14 @@ rule Linux_Worm_Generic_3ff8f75b {
         all of them
 }
 
+rule Linux_ommadawnRule {
+    meta:
+        description = "Test rule searching for ommadawn string"
+        author = "Lagartija"
+
+    strings:
+        $s1 = "ommadawn" nocase
+
+    condition:
+        $s1
+}

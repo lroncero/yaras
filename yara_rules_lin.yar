@@ -18118,7 +18118,7 @@ rule Linux_ommadawnRule {
     meta:
         description = "Test rule searching for ommadawn string"
         author = "Lagartija"
-
+        os = "Linux"
     strings:
         $s1 = "ommadawn" nocase
 
